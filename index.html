@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center for Livelihood & Development | Nairobi, Kenya</title>
+  <meta name="description" content="Center for Livelihood & Development (CLD Kenya) is a registered non-profit organization in Nairobi dedicated to sustainable livelihoods, climate resilience, and economic empowerment for women and youth.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-tag"><i class="fas fa-shield-alt"></i> Reg: NGO Co-ordination Board OP.218/051/12</span>
+        <span class="top-bar-item"><i class="fas fa-map-marker-alt"></i> Upper Hill, Nairobi, Kenya</span>
+        <span class="top-bar-item"><i class="fas fa-phone-alt"></i> <a href="tel:+254720123456">+254 (0) 720 123 456</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-envelope"></i> <a href="mailto:info@cldkenya.org">info@cldkenya.org</a></span>
+        <div class="social-links" style="margin-left: 0.5rem;">
+          <a href="#" class="social-icon-btn" title="Facebook" style="width: 26px; height: 26px; font-size: 0.75rem;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon-btn" title="Twitter / X" style="width: 26px; height: 26px; font-size: 0.75rem;"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon-btn" title="LinkedIn" style="width: 26px; height: 26px; font-size: 0.75rem;"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo-link">
+        <svg class="brand-logo-emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cldGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#15803D" />
+              <stop offset="100%" stop-color="#047857" />
+            </linearGradient>
+            <linearGradient id="cldGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F59E0B" />
+              <stop offset="100%" stop-color="#D97706" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" fill="#F0FDF4" stroke="#15803D" stroke-width="3" />
+          <circle cx="50" cy="34" r="10" fill="url(#cldGoldGrad)"/>
+          <path d="M 50 18 A 32 32 0 0 1 78 36 L 50 48 Z" fill="url(#cldGoldGrad)" opacity="0.85"/>
+          <path d="M 50 82 C 30 76 22 55 28 38 C 32 48 38 60 50 68 Z" fill="url(#cldGreenGrad)"/>
+          <path d="M 50 82 C 70 76 78 55 72 38 C 68 48 62 60 50 68 Z" fill="#22C55E"/>
+          <path d="M 50 64 C 47 70 47 78 50 86 C 53 78 53 70 50 64 Z" fill="#047857"/>
+          <circle cx="50" cy="88" r="3.5" fill="#0284C7" />
+        </svg>
+        <div class="brand-text-group">
+          <div class="brand-title">CLD <span class="brand-accent">KENYA</span></div>
+          <div class="brand-name">CENTER FOR LIVELIHOOD &amp; DEVELOPMENT</div>
+          <div class="brand-tagline">NAIROBI, KENYA &bull; EMPOWERING COMMUNITIES</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Pillars &amp; Programs</a>
+        <a href="impact.html" class="nav-link">Impact &amp; Stories</a>
+        <a href="donate.html" class="nav-link">Donate</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <button class="btn btn-gold btn-sm open-donate-modal" data-amount="2500">
+          <i class="fas fa-hand-holding-heart"></i> Donate Now
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <svg class="brand-logo-emblem" viewBox="0 0 100 100" fill="none" style="width: 36px; height: 36px;">
+          <circle cx="50" cy="50" r="46" fill="#F0FDF4" stroke="#15803D" stroke-width="3" />
+          <circle cx="50" cy="34" r="10" fill="#F59E0B"/>
+          <path d="M 50 82 C 30 76 22 55 28 38 C 32 48 38 60 50 68 Z" fill="#15803D"/>
+          <path d="M 50 82 C 70 76 78 55 72 38 C 68 48 62 60 50 68 Z" fill="#22C55E"/>
+        </svg>
+        <span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--primary-dark);">CLD <span style="color: var(--primary-light);">KENYA</span></span>
+      </div>
+      <button class="drawer-close" id="drawerClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-users"></i> About Us</a>
+      <a href="programs.html"><i class="fas fa-seedling"></i> Pillars &amp; Programs</a>
+      <a href="impact.html"><i class="fas fa-chart-line"></i> Impact Stories</a>
+      <a href="donate.html"><i class="fas fa-donate"></i> Support Our Work</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <button class="btn btn-primary open-donate-modal" style="width: 100%; margin-bottom: 1rem;" data-amount="2500">
+        <i class="fas fa-hand-holding-heart"></i> Donate via M-Pesa
+      </button>
+      <div style="font-size: 0.85rem; color: var(--text-light); text-align: center;">
+        <i class="fas fa-phone-alt"></i> +254 (0) 720 123 456<br>
+        Nairobi, Kenya
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-pattern"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="peace-hero-tag">
+          <i class="fas fa-dove"></i> Kenya's Institute for Conflict Resolution, Mediation &amp; Peacebuilding
+        </span>
+        <h1 class="hero-title">
+          Mediating Peace. <span class="highlight">Resolving Conflicts.</span> Anchoring Livelihoods in Kenya.
+        </h1>
+        <p class="hero-lead">
+          Center for Livelihood &amp; Development (CLD Kenya) is an indigenous non-governmental organization headquartered in Nairobi. We specialize in grassroots <strong>Conflict Resolution, Alternative Dispute Resolution (ADR), and Inter-Ethnic Peacebuilding</strong>. We resolve resource wars, mediate pastoralist and urban gang violence, and build lasting peace through shared climate-smart livelihoods.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-gold btn-lg open-donate-modal" data-amount="5000">
+            <i class="fas fa-handshake"></i> Support a Peace Dialogue
+          </button>
+          <a href="programs.html" class="btn btn-outline-white btn-lg">
+            <i class="fas fa-shield-alt"></i> Our Peacebuilding Pillars
+          </a>
+        </div>
+
+        <div class="hero-features-list">
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Accredited ADR &amp; Mediation Institute</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Recognized by National Peace Committee (NSC)</span>
+          </div>
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>120+ Grassroots Peace Pacts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Quick Donation Box -->
+      <div class="hero-card-widget">
+        <div class="hero-widget-header">
+          <div>
+            <span class="mpesa-quick-badge" style="background: #059669;"><i class="fas fa-dove"></i> Rapid Peace Fund</span>
+            <h3 class="hero-widget-title" style="margin-top: 0.4rem;">Sponsor a Peace Accord</h3>
+          </div>
+          <i class="fas fa-handshake" style="font-size: 2rem; color: #34d399;"></i>
+        </div>
+
+        <div class="hero-quick-donate">
+          <p style="font-size: 0.9rem; color: #cbd5e1;">
+            Empower mediators &amp; support dialogue across Kenya (KES):
+          </p>
+
+          <div class="donation-preset-grid">
+            <button class="preset-pill active" onclick="selectDonationPreset(2500)">KES 2,500</button>
+            <button class="preset-pill" onclick="selectDonationPreset(5000)">KES 5,000</button>
+            <button class="preset-pill" onclick="selectDonationPreset(15000)">KES 15,000</button>
+          </div>
+
+          <div class="hero-widget-impact-text" id="heroImpactStatement">
+            <strong>KES 2,500:</strong> Deploys emergency mediation field teams and facilitates a cross-community peace baraza in conflict corridors.
+          </div>
+
+          <button class="btn btn-primary open-donate-modal" style="width: 100%; background: #059669; border-color: #059669;" data-amount="2500">
+            <i class="fas fa-mobile-alt"></i> Donate via M-Pesa / Card
+          </button>
+
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; padding-top: 0.5rem;">
+            <span><i class="fas fa-shield-alt"></i> 100% Direct Field Peacebuilding</span>
+            <span>M-Pesa Paybill: <strong>522522</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Counter Banner -->
+  <div class="container">
+    <div class="stats-banner">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div>
+            <div class="stat-number counter-val" data-target="48500" data-suffix="+">48,500+</div>
+            <div class="stat-label">Livelihoods Transformed</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon" style="background-color: #ecfdf5; color: #059669;"><i class="fas fa-handshake"></i></div>
+          <div>
+            <div class="stat-number counter-val" data-target="65" data-suffix="+">65+</div>
+            <div class="stat-label">Peace Accords &amp; Committees</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div>
+            <div class="stat-number counter-val" data-target="18">18</div>
+            <div class="stat-label">Kenyan Counties Active</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-female"></i></div>
+          <div>
+            <div class="stat-number counter-val" data-target="86" data-suffix="%">86%</div>
+            <div class="stat-label">Women &amp; Youth Beneficiaries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section Overview -->
+  <section class="section-py" id="about">
+    <div class="container about-grid">
+      <div class="about-image-collage">
+        <img src="assets/img/agriculture-hero.jpg" alt="Kenyan community empowerment and agriculture" class="about-main-img">
+        <div class="about-floating-card">
+          <div class="counter">12+ Years</div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.25rem;">
+            Rooted in Nairobi's informal settlements and rural communities across Kenya.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle"><i class="fas fa-landmark"></i> Who We Are</span>
+        <h2 class="section-title">Rooted in Nairobi, Reaching the Heart of Kenyan Communities</h2>
+        <p class="section-desc" style="margin-bottom: 1.25rem;">
+          The Center for Livelihood &amp; Development (CLD Kenya) was founded in Nairobi on the conviction that sustainable poverty reduction requires community ownership, climate resilience, and economic independence.
+        </p>
+        <p style="color: var(--text-secondary); margin-bottom: 1.75rem;">
+          From our Nairobi secretariat in Upper Hill, we coordinate interventions that bridge urban informal settlements like Kibera, Mathare, and Mukuru with arid and semi-arid rural communities in Kitui, Turkana, and Kilifi.
+        </p>
+
+        <div class="about-values-list">
+          <div class="value-card-mini">
+            <i class="fas fa-hand-holding-water"></i>
+            <h4>Community-Led</h4>
+            <p>Projects designed and owned by local village and urban ward committees.</p>
+          </div>
+
+          <div class="value-card-mini">
+            <i class="fas fa-balance-scale"></i>
+            <h4>High Integrity</h4>
+            <p>Transparent stewardship with audited financials and open public reporting.</p>
+          </div>
+
+          <div class="value-card-mini">
+            <i class="fas fa-seedling"></i>
+            <h4>Climate Smart</h4>
+            <p>Prioritizing renewable energy, indigenous crops, and water harvesting.</p>
+          </div>
+
+          <div class="value-card-mini">
+            <i class="fas fa-venus-double"></i>
+            <h4>Inclusion First</h4>
+            <p>Targeted empowerment for single mothers, youth, and persons with disabilities.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-outline-primary">
+            Learn More About CLD <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="about.html#governance" class="btn btn-outline-primary" style="border-color: #cbd5e1; color: var(--text-secondary);">
+            Our Leadership &amp; Board
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thematic Pillars / Programs Section -->
+  <section class="section-py" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" id="programs">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-dove"></i> The Peace-Livelihoods Nexus</span>
+        <h2 class="section-title">Rooted in Conflict Resolution: Our 5 Strategic Pillars</h2>
+        <p class="section-desc">
+          Sustainable livelihoods cannot survive in active conflict zones. Every program CLD Kenya operates is designed as a direct peacebuilding intervention—transforming historical flashpoints into cooperative economic hubs.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="pillar-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Peace Pillars</button>
+        <button class="filter-btn" data-filter="adr">ADR &amp; Mediation</button>
+        <button class="filter-btn" data-filter="resource">Resource &amp; Water Conflicts</button>
+        <button class="filter-btn" data-filter="youth">Urban Gang De-radicalization</button>
+        <button class="filter-btn" data-filter="women">Women Peace Mediators</button>
+        <button class="filter-btn" data-filter="early-warning">Early Warning &amp; Policy</button>
+      </div>
+
+      <!-- Programs Grid -->
+      <div class="programs-grid">
+        <!-- Pillar 1: Foundational ADR & Mediation -->
+        <div class="program-card program-card-item" data-category="adr">
+          <div class="program-img-wrap">
+            <img src="assets/img/peacebuilding.jpg" alt="Alternative Dispute Resolution in Kenya">
+            <span class="program-badge" style="background: #064e3b;">Pillar 01 &bull; Core Foundation</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Alternative Dispute Resolution (ADR) &amp; Peace Accords</h3>
+            <p>
+              Convening inter-ethnic dialogues, customary Councils of Elders, and accredited legal mediation panels to resolve pastoralist boundary conflicts, cattle raids, and informal settlement disputes across Kenya.
+            </p>
+            <div class="program-metric" style="color: #047857; background: #ecfdf5;">
+              <i class="fas fa-handshake"></i> 120+ Grassroots Peace Pacts Brokered
+            </div>
+            <a href="programs.html#adr" class="btn btn-outline-primary btn-sm">Explore ADR Framework</a>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Resource & Water Conflicts -->
+        <div class="program-card program-card-item" data-category="resource">
+          <div class="program-img-wrap">
+            <img src="assets/img/clean-water.jpg" alt="Shared peace water boreholes in Kenya">
+            <span class="program-badge" style="background: rgba(2, 132, 199, 0.95);">Pillar 02 &bull; Resource Peace</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Resource Conflict Mitigation &amp; Shared Water (WASH)</h3>
+            <p>
+              Transforming contested riverbeds and dried grazing corridors into cooperative solar boreholes and sand dams co-managed by joint peace committees representing traditionally warring clans.
+            </p>
+            <div class="program-metric" style="color: var(--accent-blue); background: var(--accent-blue-50);">
+              <i class="fas fa-tint"></i> 26 Co-Managed Peace Boreholes Built
+            </div>
+            <a href="programs.html#resource" class="btn btn-outline-primary btn-sm">Read Pillar Details</a>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Urban Gang Mediation & Youth De-radicalization -->
+        <div class="program-card program-card-item" data-category="youth">
+          <div class="program-img-wrap">
+            <img src="assets/img/youth-tech.jpg" alt="Youth de-radicalization in Nairobi">
+            <span class="program-badge" style="background: rgba(217, 119, 6, 0.95);">Pillar 03 &bull; Urban Peace</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Urban Gang Mediation &amp; Youth De-Radicalization</h3>
+            <p>
+              Mediating informal settlement turf wars in Mathare, Kibera, and Mukuru (Nairobi). We transition at-risk youth and gang members away from crime into digital freelancing, coding, and vocational trade.
+            </p>
+            <div class="program-metric" style="color: var(--accent-gold); background: var(--accent-gold-50);">
+              <i class="fas fa-users-slash"></i> 3,800+ At-Risk Youth Reintegrated
+            </div>
+            <a href="programs.html#youth" class="btn btn-outline-primary btn-sm">Read Pillar Details</a>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Women in Peace & Post-Conflict Recovery -->
+        <div class="program-card program-card-item" data-category="women">
+          <div class="program-img-wrap">
+            <img src="assets/img/women-coop.jpg" alt="Women peace mediators in Kenya">
+            <span class="program-badge" style="background: #9333ea;">Pillar 04 &bull; Women &amp; Peace</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Women Peace Mediators &amp; Post-Conflict Economic Chamas</h3>
+            <p>
+              Championing UNSCR 1325 (Women, Peace &amp; Security). We place women at formal mediation tables and provide revolving seed grants to chamas composed of conflict widows and survivors.
+            </p>
+            <div class="program-metric" style="color: #9333ea; background: #faf5ff;">
+              <i class="fas fa-venus"></i> 320+ Women Peace Chamas Funded
+            </div>
+            <a href="programs.html#women" class="btn btn-outline-primary btn-sm">Read Pillar Details</a>
+          </div>
+        </div>
+
+        <!-- Pillar 5: Pastoralist Grazing Pacts & Food Resilience -->
+        <div class="program-card program-card-item" data-category="resource">
+          <div class="program-img-wrap">
+            <img src="assets/img/urban-farming.jpg" alt="Grazing pacts and climate agriculture">
+            <span class="program-badge" style="background: #15803d;">Pillar 05 &bull; Food &amp; Pasture</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Pastoralist Grazing Pacts &amp; Food Security</h3>
+            <p>
+              Brokering seasonal rangeland treaties and pasture reseeding between pastoralists, accompanied by drought-resilient fodder production and vertical sack farming to curb hunger-driven cattle raids.
+            </p>
+            <div class="program-metric" style="color: var(--primary-light); background: var(--primary-50);">
+              <i class="fas fa-seedling"></i> 14,200 Farmers &amp; Herders in Peace Pacts
+            </div>
+            <a href="programs.html#pasture" class="btn btn-outline-primary btn-sm">Read Pillar Details</a>
+          </div>
+        </div>
+
+        <!-- Pillar 6: Early Warning & Electoral Peace -->
+        <div class="program-card program-card-item" data-category="early-warning">
+          <div class="program-img-wrap">
+            <img src="assets/img/advocacy.jpg" alt="Early warning and peace advocacy in Kenya">
+            <span class="program-badge" style="background: #0f172a;">Pillar 06 &bull; Early Warning</span>
+          </div>
+          <div class="program-card-body">
+            <h3>Conflict Early Warning, Land Rights &amp; Electoral Peace</h3>
+            <p>
+              Community Early Warning Early Response (EWER) SMS hotlines to de-escalate tensions before violence erupts. We partner with the National Steering Committee on Peacebuilding (NSC) for electoral peace pacts.
+            </p>
+            <div class="program-metric" style="color: #0f172a; background: var(--bg-alt);">
+              <i class="fas fa-bell"></i> 24/7 Peace Rapid Response Network
+            </div>
+            <a href="programs.html#early-warning" class="btn btn-outline-primary btn-sm">Read Pillar Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- County Hubs & Nairobi Presence -->
+  <section class="section-py counties-section">
+    <div class="container counties-grid">
+      <div>
+        <span class="section-subtitle" style="background: rgba(255, 255, 255, 0.1); color: #fbbf24; border-color: rgba(251, 191, 36, 0.3);">
+          <i class="fas fa-map-marked-alt"></i> Peacebuilding Footprint
+        </span>
+        <h2 class="section-title" style="color: #ffffff;">Active Across Kenya's Primary Conflict Corridors</h2>
+        <p style="color: #cbd5e1; font-size: 1.05rem; margin-bottom: 2rem;">
+          From our Nairobi National Secretariat in Upper Hill, CLD coordinates rapid mediation field units, Early Warning networks, and Peace Committees embedded directly within communities across 18 Kenyan counties.
+        </p>
+
+        <div class="counties-pill-grid">
+          <div class="county-hub-card">
+            <h4><i class="fas fa-city"></i> Nairobi Informal Settlements Hub</h4>
+            <p>Mathare, Kibera, Mukuru, Dandora, Kawangware (Youth gang de-escalation, inter-ethnic peace barazas, digital livelihood academies)</p>
+          </div>
+
+          <div class="county-hub-card">
+            <h4><i class="fas fa-mountain"></i> North Rift &amp; Kerio Valley Corridor</h4>
+            <p>Turkana, West Pokot, Baringo, Samburu, Elgeyo Marakwet (Cattle rustling cessation, pasture sharing pacts, solar peace boreholes)</p>
+          </div>
+
+          <div class="county-hub-card">
+            <h4><i class="fas fa-sun"></i> Northern Frontier &amp; Eastern Hub</h4>
+            <p>Marsabit, Isiolo, Garissa, Mandera, Wajir (Modogashe Declaration revitalization, cross-clan water accords, women peace monitors)</p>
+          </div>
+
+          <div class="county-hub-card">
+            <h4><i class="fas fa-water"></i> Coast &amp; Tana River Delta Hub</h4>
+            <p>Tana River, Lamu, Kilifi (Farmer-herder dispute mediation, mangrove peace cooperatives, youth civic engagement)</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: var(--radius-xl); padding: 2.25rem; text-align: center;">
+        <i class="fas fa-shield-alt" style="font-size: 3.5rem; color: #fbbf24; margin-bottom: 1.25rem;"></i>
+        <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 0.75rem;">Community-Rooted Accountability</h3>
+        <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1.75rem; line-height: 1.6;">
+          Every project is co-signed by a local Community Advisory Council consisting of village elders, women leaders, youth representatives, and local county chiefs.
+        </p>
+        <a href="impact.html" class="btn btn-gold btn-sm" style="width: 100%;">
+          View Our County Impact Map <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficiary Stories / Voices of Hope -->
+  <section class="section-py" id="stories">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-comment-dots"></i> Stories of Change</span>
+        <h2 class="section-title">Lives Transformed Through Dignity and Work</h2>
+        <p class="section-desc">
+          Meet the courageous men and women writing new chapters of resilience across Nairobi and beyond.
+        </p>
+      </div>
+
+      <div class="stories-grid">
+        <!-- Story 1 -->
+        <div class="story-card">
+          <img src="assets/img/story-amina.jpg" alt="Amina Odhiambo" class="story-img">
+          <div class="story-body">
+            <div class="story-tag">Urban Agriculture &bull; Mathare, Nairobi</div>
+            <h3 style="font-size: 1.25rem;">From Scarcity to Supplying Fresh Kales</h3>
+            <p class="story-quote">
+              "With CLD's vertical sack farming training and indigenous seeds, I now harvest 30kg of fresh sukuma wiki every week from my 4-meter balcony in Mathare. I pay school fees on time and feed my family nutritious food."
+            </p>
+            <div class="beneficiary-meta">
+              <div class="beneficiary-avatar">AO</div>
+              <div>
+                <strong>Amina Odhiambo</strong>
+                <div style="font-size: 0.8rem; color: var(--text-light);">Mother of 3, Mathare 4A</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+          <img src="assets/img/story-brian.jpg" alt="Brian Mwangi" class="story-img">
+          <div class="story-body">
+            <div class="story-tag">Youth Digital Hub &bull; Nairobi Eastlands</div>
+            <h3 style="font-size: 1.25rem;">Unlocking Global Freelancing from Nairobi</h3>
+            <p class="story-quote">
+              "After completing CLD's 4-month digital skills training at the Mukuru hub, I secured remote transcription and data analysis contracts. I was able to purchase my own laptop and employ two other youth in my neighbourhood."
+            </p>
+            <div class="beneficiary-meta">
+              <div class="beneficiary-avatar" style="background: var(--accent-gold-50); color: var(--accent-gold);">BM</div>
+              <div>
+                <strong>Brian Mwangi</strong>
+                <div style="font-size: 0.8rem; color: var(--text-light);">Digital Academy Graduate, Mukuru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+          <img src="assets/img/story-faith.jpg" alt="Naserian Ekitela" class="story-img">
+          <div class="story-body">
+            <div class="story-tag">Water Resilience &bull; Turkana Central</div>
+            <h3 style="font-size: 1.25rem;">Water Flowing 500 Meters from Home</h3>
+            <p class="story-quote">
+              "We used to walk 8 kilometers under the scorching sun each morning to dig in dry riverbeds for salty water. The solar-powered kiosk installed by CLD has restored dignity, health, and clean drinking water to our entire village."
+            </p>
+            <div class="beneficiary-meta">
+              <div class="beneficiary-avatar" style="background: var(--accent-blue-50); color: var(--accent-blue);">NE</div>
+              <div>
+                <strong>Naserian Ekitela</strong>
+                <div style="font-size: 0.8rem; color: var(--text-light);">Chairperson, Lorugum Water Council</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financial Transparency & Trust Bar -->
+  <section class="trust-bar section-py-sm">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h4>84% Direct Programs</h4>
+        <p>84 cents of every shilling donated directly funds field community initiatives.</p>
+      </div>
+
+      <div class="trust-item">
+        <i class="fas fa-stamp"></i>
+        <h4>NGO Board Registered</h4>
+        <p>Compliant under the Non-Governmental Organizations Co-ordination Act, Laws of Kenya.</p>
+      </div>
+
+      <div class="trust-item">
+        <i class="fas fa-search-dollar"></i>
+        <h4>Independent Annual Audits</h4>
+        <p>Audited by accredited Kenyan audit firms with public disclosure reports.</p>
+      </div>
+
+      <div class="trust-item">
+        <i class="fas fa-award"></i>
+        <h4>KRA Tax Exempt (Sec. 13)</h4>
+        <p>Donations qualify for charitable deduction under Kenyan tax law.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Donation CTA Strip with M-Pesa details -->
+  <section class="section-py">
+    <div class="container">
+      <div class="donation-cta-banner">
+        <div class="donation-cta-grid">
+          <div>
+            <span class="badge-tag" style="background: rgba(251, 191, 36, 0.2); color: #fef08a; margin-bottom: 1rem;">
+              <i class="fas fa-hands-helping"></i> Partner in Our Mission
+            </span>
+            <h2 style="color: #ffffff; font-size: 2.4rem; margin-bottom: 1.25rem;">
+              Every Shilling Invested Grows Resilience in Kenya
+            </h2>
+            <p style="color: #d1fae5; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+              Your donation funds clean water kiosks, provides drought-resistant seeds, trains youth in tech, and gives single mothers working capital. Join hands with CLD Kenya today.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-gold btn-lg open-donate-modal" data-amount="5000">
+                <i class="fas fa-heart"></i> Make a Donation Now
+              </button>
+              <a href="contact.html#partnership" class="btn btn-outline-white btn-lg">
+                <i class="fas fa-handshake"></i> Corporate Partnerships
+              </a>
+            </div>
+          </div>
+
+          <!-- M-Pesa Direct Details Widget -->
+          <div class="mpesa-quick-box">
+            <div class="mpesa-header">
+              <span class="mpesa-logo-text"><i class="fas fa-mobile-alt"></i> M-PESA PAYBILL</span>
+              <span style="font-size: 0.8rem; background: #e2e8f0; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700;">KENYA</span>
+            </div>
+
+            <div class="paybill-row">
+              <div>
+                <div class="paybill-label">Business / Paybill No.</div>
+                <div class="paybill-val">522522</div>
+              </div>
+              <button class="copy-btn" data-copy-text="522522"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+
+            <div class="paybill-row">
+              <div>
+                <div class="paybill-label">Account Name</div>
+                <div class="paybill-val">CLD-KENYA</div>
+              </div>
+              <button class="copy-btn" data-copy-text="CLD-KENYA"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-secondary); margin: 1rem 0; line-height: 1.5;">
+              <i class="fas fa-info-circle" style="color: var(--primary-light);"></i> 
+              Go to <strong>M-PESA &gt; Lipa na M-PESA &gt; Pay Bill</strong>. Enter 522522 and Account CLD-KENYA, followed by your gift amount and PIN.
+            </div>
+
+            <button class="btn btn-primary open-donate-modal" style="width: 100%;" data-amount="2500">
+              <i class="fas fa-bolt"></i> Send Instant STK Push to Phone
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & Publications -->
+  <section class="section-py" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-newspaper"></i> Updates &amp; Reports</span>
+        <h2 class="section-title">Latest News from the Field</h2>
+        <p class="section-desc">Stay informed on project rollouts, research findings, and community events.</p>
+      </div>
+
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-body">
+            <span class="story-tag" style="color: var(--primary-light);">Annual Report</span>
+            <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">2025/2026 Annual Impact &amp; Financial Report Published</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Full comprehensive breakdown of funds deployed, community beneficiaries reached across 18 Kenyan counties, and audited financial statements.
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-sm" onclick="showToast('Downloading CLD Annual Report 2025-26 (PDF)...', 'success'); return false;">
+              <i class="fas fa-download"></i> Download Report (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div class="story-body">
+            <span class="story-tag" style="color: var(--accent-gold);">Nairobi Climate Drive</span>
+            <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">Nairobi River Basin Urban Greening Initiative Launched</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              In partnership with youth groups in Eastlands Nairobi, CLD planted 15,000 bamboo and fruit saplings along degraded riparian reserves to curb flooding.
+            </p>
+            <a href="impact.html" class="btn btn-outline-primary btn-sm">Read Article</a>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div class="story-body">
+            <span class="story-tag" style="color: var(--accent-blue);">Agribusiness Forum</span>
+            <h3 style="font-size: 1.2rem; margin: 0.4rem 0;">Kenya Youth in Climate-Smart Agribusiness Summit 2026</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Convening 450 young agripreneurs at our Nairobi training center to discuss solar cold-chain storage and direct market linkages with supermarket buyers.
+            </p>
+            <a href="contact.html" class="btn btn-outline-primary btn-sm">Event Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Donation Modal Dialog -->
+  <div class="modal-backdrop" id="donationModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fas fa-heart" style="color: #e11d48;"></i> Support CLD Kenya</h3>
+        <button class="modal-close-btn" id="closeDonationModal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="mpesaFlowContainer">
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Your tax-deductible contribution supports community food gardens, youth digital training, and clean water across Kenya.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label">Select Amount (KES):</label>
+            <div class="donation-preset-grid" style="margin-bottom: 0.85rem;">
+              <button type="button" class="preset-pill preset-pill-modal" data-value="1000">KES 1,000</button>
+              <button type="button" class="preset-pill preset-pill-modal active" data-value="2500">KES 2,500</button>
+              <button type="button" class="preset-pill preset-pill-modal" data-value="5000">KES 5,000</button>
+              <button type="button" class="preset-pill preset-pill-modal" data-value="10000">KES 10,000</button>
+              <button type="button" class="preset-pill preset-pill-modal" data-value="25000">KES 25,000</button>
+              <button type="button" class="preset-pill preset-pill-modal" data-value="50000">KES 50,000</button>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+              <span style="font-weight: 700; color: var(--text-secondary);">Custom Amount:</span>
+              <input type="number" id="customAmountInput" class="form-control" value="2500" min="100" style="font-weight: 700;">
+            </div>
+          </div>
+
+          <div class="hero-widget-impact-text" id="donationImpactText" style="margin-bottom: 1.5rem; background: var(--primary-50); color: var(--primary-dark); border-color: var(--primary-light);">
+            KES 2,500: Delivers 20 drought-tolerant tree saplings and family vegetable sack gardens in Nairobi informal settlements.
+          </div>
+
+          <!-- M-PESA STK Push Form -->
+          <form id="mpesaStkForm">
+            <div class="form-group">
+              <label class="form-label" for="mpesaPhoneInput">
+                <i class="fas fa-mobile-alt" style="color: #008751;"></i> Safaricom M-PESA Phone Number:
+              </label>
+              <input type="tel" id="mpesaPhoneInput" class="form-control" placeholder="e.g. 0712 345 678 or 254712345678" required>
+              <small style="color: var(--text-light); font-size: 0.78rem;">
+                A prompt will appear instantly on your phone requesting your M-PESA PIN.
+              </small>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem;">
+              <i class="fas fa-lock"></i> Send M-PESA PIN Prompt
+            </button>
+          </form>
+
+          <!-- Alternative manual paybill instructions -->
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); font-size: 0.85rem; color: var(--text-secondary);">
+            <strong>Manual Paybill:</strong> Paybill <strong>522522</strong> &bull; Acc: <strong>CLD-KENYA</strong><br>
+            Bank Wire or International Card? <a href="donate.html" style="color: var(--primary-light); text-decoration: underline;">View International Wire / Bank Details</a>
+          </div>
+        </div>
+
+        <!-- Success Receipt View (hidden initially) -->
+        <div id="donationReceipt" style="display: none; text-align: center; padding: 1rem 0;">
+          <div style="width: 64px; height: 64px; background: var(--primary-100); color: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem auto;">
+            <i class="fas fa-check"></i>
+          </div>
+          <h3 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Asante Sana! Thank You!</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            Your generous contribution to Center for Livelihood &amp; Development has been received.
+          </p>
+
+          <div style="background: var(--bg-alt); border-radius: var(--radius-md); padding: 1.25rem; text-align: left; margin-bottom: 1.5rem; font-size: 0.9rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="color: var(--text-light);">Receipt No:</span>
+              <strong id="receiptTxnCode">CLD-981249</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="color: var(--text-light);">Amount:</span>
+              <strong id="receiptAmount">KES 2,500</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="color: var(--text-light);">Phone:</span>
+              <strong id="receiptPhone">0720 123 456</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-light);">Date:</span>
+              <strong id="receiptDate">Nairobi, Kenya</strong>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-outline-primary" onclick="resetDonationModal()" style="margin-right: 0.5rem;">
+            Make Another Donation
+          </button>
+          <button type="button" class="btn btn-primary" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Receipt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg class="brand-logo-emblem" viewBox="0 0 100 100" fill="none" style="width: 44px; height: 44px;">
+                <circle cx="50" cy="50" r="46" fill="#064e3b" stroke="#15803D" stroke-width="3" />
+                <circle cx="50" cy="34" r="10" fill="#F59E0B"/>
+                <path d="M 50 18 A 32 32 0 0 1 78 36 L 50 48 Z" fill="#F59E0B" opacity="0.85"/>
+                <path d="M 50 82 C 30 76 22 55 28 38 C 32 48 38 60 50 68 Z" fill="#15803D"/>
+                <path d="M 50 82 C 70 76 78 55 72 38 C 68 48 62 60 50 68 Z" fill="#22C55E"/>
+                <circle cx="50" cy="88" r="3.5" fill="#38bdf8" />
+              </svg>
+              <div class="brand-text-group">
+                <div class="brand-title" style="color: #ffffff;">CLD <span style="color: #4ade80;">KENYA</span></div>
+                <div class="brand-name" style="color: #cbd5e1; font-size: 0.7rem;">CENTER FOR LIVELIHOOD &amp; DEVELOPMENT</div>
+              </div>
+            </div>
+          </div>
+          <p style="line-height: 1.6; margin-bottom: 1.5rem;">
+            Center for Livelihood &amp; Development (CLD Kenya) is an indigenous non-governmental organization registered under the NGO Coordination Board of Kenya. We empower vulnerable households through climate action, economic inclusion, and grassroots capacity.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About CLD Kenya</a>
+            <a href="programs.html">Thematic Pillars</a>
+            <a href="impact.html">Impact &amp; Case Studies</a>
+            <a href="donate.html">Donation &amp; Support</a>
+            <a href="contact.html">Careers &amp; Tenders</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Programs -->
+        <div class="footer-col">
+          <h4>Our Pillars</h4>
+          <div class="footer-links">
+            <a href="programs.html#agriculture">Climate-Smart Farming</a>
+            <a href="programs.html#empowerment">Women &amp; Youth Funds</a>
+            <a href="programs.html#climate">Water &amp; Renewable Energy</a>
+            <a href="programs.html#skills">Digital Skills Hub</a>
+            <a href="programs.html#health">Maternal Nutrition</a>
+            <a href="programs.html#advocacy">Policy &amp; Climate Justice</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Nairobi Office -->
+        <div class="footer-col">
+          <h4>Nairobi Secretariat</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              4th Floor, Prosperity Plaza, Hospital Road,<br>
+              Upper Hill, P.O. Box 48291 - 00100 GPO,<br>
+              Nairobi, Kenya
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              +254 (0) 720 123 456<br>
+              +254 (0) 20 271 8900
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>info@cldkenya.org | partnerships@cldkenya.org</div>
+          </div>
+
+          <form class="newsletter-form footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-gold btn-sm"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Center for Livelihood &amp; Development (CLD Kenya). All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Financial Transparency</a>
+          <a href="#">Whistleblower Portal</a>
+          <a href="#">Safeguarding Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

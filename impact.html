@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact & Stories | Center for Livelihood & Development (CLD Kenya)</title>
+  <meta name="description" content="Discover the tangible impact and true transformation stories across Nairobi informal settlements and rural Kenya spearheaded by Center for Livelihood & Development.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Information Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-tag"><i class="fas fa-shield-alt"></i> Reg: NGO Co-ordination Board OP.218/051/12</span>
+        <span class="top-bar-item"><i class="fas fa-map-marker-alt"></i> Upper Hill, Nairobi, Kenya</span>
+        <span class="top-bar-item"><i class="fas fa-phone-alt"></i> <a href="tel:+254720123456">+254 (0) 720 123 456</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item"><i class="fas fa-envelope"></i> <a href="mailto:info@cldkenya.org">info@cldkenya.org</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo-link">
+        <svg class="brand-logo-emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cldGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#15803D" />
+              <stop offset="100%" stop-color="#047857" />
+            </linearGradient>
+            <linearGradient id="cldGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F59E0B" />
+              <stop offset="100%" stop-color="#D97706" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" fill="#F0FDF4" stroke="#15803D" stroke-width="3" />
+          <circle cx="50" cy="34" r="10" fill="url(#cldGoldGrad)"/>
+          <path d="M 50 18 A 32 32 0 0 1 78 36 L 50 48 Z" fill="url(#cldGoldGrad)" opacity="0.85"/>
+          <path d="M 50 82 C 30 76 22 55 28 38 C 32 48 38 60 50 68 Z" fill="url(#cldGreenGrad)"/>
+          <path d="M 50 82 C 70 76 78 55 72 38 C 68 48 62 60 50 68 Z" fill="#22C55E"/>
+          <path d="M 50 64 C 47 70 47 78 50 86 C 53 78 53 70 50 64 Z" fill="#047857"/>
+          <circle cx="50" cy="88" r="3.5" fill="#0284C7" />
+        </svg>
+        <div class="brand-text-group">
+          <div class="brand-title">CLD <span class="brand-accent">KENYA</span></div>
+          <div class="brand-name">CENTER FOR LIVELIHOOD &amp; DEVELOPMENT</div>
+          <div class="brand-tagline">NAIROBI, KENYA &bull; EMPOWERING COMMUNITIES</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Pillars &amp; Programs</a>
+        <a href="impact.html" class="nav-link active">Impact &amp; Stories</a>
+        <a href="donate.html" class="nav-link">Donate</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <button class="btn btn-gold btn-sm open-donate-modal" data-amount="2500">
+          <i class="fas fa-hand-holding-heart"></i> Donate Now
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logo.svg" alt="CLD Kenya Logo" style="height: 42px;">
+      <button class="drawer-close" id="drawerClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-users"></i> About Us</a>
+      <a href="programs.html"><i class="fas fa-seedling"></i> Pillars &amp; Programs</a>
+      <a href="impact.html" class="active"><i class="fas fa-chart-line"></i> Impact Stories</a>
+      <a href="donate.html"><i class="fas fa-donate"></i> Support Our Work</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Banner -->
+  <div style="background: linear-gradient(135deg, #072a1a 0%, #0d462c 100%); color: #ffffff; padding: 4.5rem 0 3.5rem 0;">
+    <div class="container">
+      <span class="hero-badge"><i class="fas fa-dove"></i> Documented Peace Accords &amp; Lasting Dividends</span>
+      <h1 style="color: #ffffff; font-size: 2.75rem; margin-top: 0.5rem; margin-bottom: 1rem;">Evidence-Based Peace &amp; Impact</h1>
+      <p style="color: #cbd5e1; font-size: 1.15rem; max-width: 680px;">
+        Verifiable peace metrics and sustainable livelihood dividends across Kenya's conflict-prone pastoralist corridors and Nairobi informal settlements.
+      </p>
+    </div>
+  </div>
+
+  <!-- Key Metrics Highlights -->
+  <section class="section-py-sm" style="background: #ffffff; border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon" style="color: var(--primary-light); background: #dcfce7;"><i class="fas fa-handshake"></i></div>
+          <div>
+            <div class="stat-number">48</div>
+            <div class="stat-label">Binding Peace Accords Brokered</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon" style="color: var(--accent-gold); background: #fef3c7;"><i class="fas fa-users-cog"></i></div>
+          <div>
+            <div class="stat-number">1,240+</div>
+            <div class="stat-label">Elders &amp; Peace Monitors Certified</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon" style="color: var(--accent-blue); background: #e0f2fe;"><i class="fas fa-tint"></i></div>
+          <div>
+            <div class="stat-number">65,000+</div>
+            <div class="stat-label">People Sharing Neutral Water Kiosks</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon" style="color: #10b981; background: #ecfdf5;"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <div class="stat-number">94.2%</div>
+            <div class="stat-label">Ceasefire Compliance Rate (24 Mo.)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories of Change -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-heart"></i> Verified Transformations</span>
+        <h2 class="section-title">Voices from the Peace Frontlines</h2>
+        <p class="section-desc">First-hand accounts of transformed communities where peace paved the path to thriving livelihoods.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 3rem;">
+        
+        <!-- Story 1: Suguta Valley Conflict Resolution -->
+        <div style="background: #ffffff; border-radius: var(--radius-xl); border: 1px solid var(--border-color); overflow: hidden; display: grid; grid-template-columns: 0.9fr 1.1fr; box-shadow: var(--shadow-sm); border-left: 6px solid #059669;">
+          <img src="assets/img/peacebuilding.jpg" alt="Community conflict resolution and peace accord" style="width: 100%; height: 100%; object-fit: cover; min-height: 340px;">
+          <div style="padding: 2.5rem;">
+            <div class="story-tag" style="color: #059669;"><i class="fas fa-check-circle"></i> Suguta Valley &bull; Cross-County Elder Peace Accord</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;">Silencing Guns, Opening Corridors: The Suguta Valley Peace Treaty</h3>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+              Decades of cyclic cattle rustling and dry-season pasture clashes once made the border between Turkana and Samburu impassable. CLD deployed accredited Alternative Dispute Resolution (ADR) mediators to host a series of neutral <em>Lomerani</em> elder barazas.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+              The resulting peace accord codified reciprocal grazing rights and established a shared solar water trough. Today, morans from both communities jointly manage the livestock dipping stations and trade peacefully at cross-border markets.
+            </p>
+            <div style="background: #ecfdf5; padding: 1rem; border-radius: var(--radius-md); font-style: italic; color: #064e3b;">
+              "Before CLD convened our council under the acacia tree, our boys carried rifles. Today, our children herd livestock side-by-side without fear." &mdash; Mzee Ekeno, Peace Council Elder
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2: Urban Gang Mediation in Mathare & Mukuru -->
+        <div style="background: #ffffff; border-radius: var(--radius-xl); border: 1px solid var(--border-color); overflow: hidden; display: grid; grid-template-columns: 1.1fr 0.9fr; box-shadow: var(--shadow-sm); border-left: 6px solid var(--accent-gold);">
+          <div style="padding: 2.5rem;">
+            <div class="story-tag" style="color: var(--accent-gold);"><i class="fas fa-hands-helping"></i> Nairobi Informal Settlements &bull; Youth De-radicalization</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;">From Street Warfare to Tech Micro-Enterprises in Mathare</h3>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+              In the dense alleys of Mathare, territorial turf battles between rival youth gangs often disrupted informal markets and subjected young men to violence. CLD peace facilitators conducted confidential peer dialogues to broker a mutual non-aggression truce.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+              As a direct peace dividend, former rivals were co-enrolled in CLD's Eastlands Youth Digital &amp; Agribusiness Hub. Over 280 ex-combatants have graduated with certified digital livelihoods, operating smartphone repair and vertical sack-farming collectives.
+            </p>
+            <div style="background: #fef3c7; padding: 1rem; border-radius: var(--radius-md); font-style: italic; color: #92400e;">
+              "Mediation showed us that poverty was our real enemy, not our brothers on the opposite street. Today we build apps and run chicken coops together." &mdash; Kevin O., Youth Peace Envoy
+            </div>
+          </div>
+          <img src="assets/img/youth-tech.jpg" alt="Youth tech and de-radicalization training" style="width: 100%; height: 100%; object-fit: cover; min-height: 340px;">
+        </div>
+
+        <!-- Story 3: Women Mediators and Shared Water -->
+        <div style="background: #ffffff; border-radius: var(--radius-xl); border: 1px solid var(--border-color); overflow: hidden; display: grid; grid-template-columns: 0.9fr 1.1fr; box-shadow: var(--shadow-sm); border-left: 6px solid var(--accent-blue);">
+          <img src="assets/img/clean-water.jpg" alt="Turkana clean water kiosk" style="width: 100%; height: 100%; object-fit: cover; min-height: 340px;">
+          <div style="padding: 2.5rem;">
+            <div class="story-tag" style="color: var(--accent-blue);"><i class="fas fa-female"></i> Turkana Central &bull; Women-Led Shared Water Peace Kiosk</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;">Women as Peace Brokers: Ending Border Clashes Around Water Pans</h3>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+              When scarce dry-season water points triggered recurring ethnic skirmishes in Turkana Central, women bore the brunt of both violence and 5-hour daily water treks. Under CLD's UNSCR 1325 Women Mediators network, local mothers stepped up to lead joint inter-community dialogues.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+              CLD supported their treaty by drilling a 140m solar borehole at a neutral midpoint. Co-managed by a bi-clan women's committee, the kiosk provides 25,000 liters of safe water daily and irrigates a joint organic vegetable cooperative.
+            </p>
+            <div style="background: #e0f2fe; padding: 1rem; border-radius: var(--radius-md); font-style: italic; color: #075985;">
+              "Women brought the clans together when politicians failed. Our children drink the same clean water, and our market stalls thrive." &mdash; Akiru, Women Peace Committee Chair
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Peace Dividend Comparison Matrix -->
+  <section class="section-py" style="background-color: var(--bg-alt); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle"><i class="fas fa-balance-scale"></i> Quantitative Proof</span>
+        <h2 class="section-title">The Peace Dividend: Before vs. After CLD Intervention</h2>
+        <p class="section-desc">Comparing baseline conflict flashpoints before our mediation accords against 24-month post-accord indicators.</p>
+      </div>
+
+      <div style="background: #ffffff; border-radius: var(--radius-xl); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-sm);">
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+            <thead>
+              <tr style="background: #0f172a; color: #ffffff;">
+                <th style="padding: 1.25rem 1.5rem; font-weight: 700;">Indicator</th>
+                <th style="padding: 1.25rem 1.5rem; font-weight: 700; color: #f87171;">Baseline (Before Mediation)</th>
+                <th style="padding: 1.25rem 1.5rem; font-weight: 700; color: #4ade80;">Post-Accord Status (After CLD Nexus)</th>
+                <th style="padding: 1.25rem 1.5rem; font-weight: 700; color: #fbbf24;">Net Peace Dividend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.2rem 1.5rem; font-weight: 600;">Armed Resource Clashes</td>
+                <td style="padding: 1.2rem 1.5rem; color: #dc2626;">Avg. 14 violent raids/year</td>
+                <td style="padding: 1.2rem 1.5rem; color: #15803d; font-weight: 600;">0 raids in 24 months</td>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 700; color: #047857;">100% Reduction in Target Corridors</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color); background: #fafafa;">
+                <td style="padding: 1.2rem 1.5rem; font-weight: 600;">Pastoralist Cross-Border Grazing</td>
+                <td style="padding: 1.2rem 1.5rem; color: #dc2626;">Closed militarized buffer zones</td>
+                <td style="padding: 1.2rem 1.5rem; color: #15803d; font-weight: 600;">Regulated seasonal grazing pacts</td>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 700; color: #047857;">420,000 Ha Rangeland Restored</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.2rem 1.5rem; font-weight: 600;">School Attendance in Hotspots</td>
+                <td style="padding: 1.2rem 1.5rem; color: #dc2626;">Under 41% due to insecurity</td>
+                <td style="padding: 1.2rem 1.5rem; color: #15803d; font-weight: 600;">88.4% uninterrupted attendance</td>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 700; color: #047857;">+47.4% Rise in Child Enrollment</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color); background: #fafafa;">
+                <td style="padding: 1.2rem 1.5rem; font-weight: 600;">Women Weekly Market Trade</td>
+                <td style="padding: 1.2rem 1.5rem; color: #dc2626;">Restricted to daytime armed escorts</td>
+                <td style="padding: 1.2rem 1.5rem; color: #15803d; font-weight: 600;">Open daily cross-clan barter &amp; chamas</td>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 700; color: #047857;">+310% Increase in Household Income</td>
+              </tr>
+              <tr>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 600;">Dispute Resolution Pathway</td>
+                <td style="padding: 1.2rem 1.5rem; color: #dc2626;">Retaliatory violence &amp; vigilantes</td>
+                <td style="padding: 1.2rem 1.5rem; color: #15803d; font-weight: 600;">ADR Elder Barazas &amp; Peace Desks</td>
+                <td style="padding: 1.2rem 1.5rem; font-weight: 700; color: #047857;">91% Disputes Settled Out of Court</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <svg class="brand-logo-emblem" viewBox="0 0 100 100" fill="none" style="width: 44px; height: 44px;">
+              <circle cx="50" cy="50" r="46" fill="#064e3b" stroke="#15803D" stroke-width="3" />
+              <circle cx="50" cy="34" r="10" fill="#F59E0B"/>
+              <path d="M 50 18 A 32 32 0 0 1 78 36 L 50 48 Z" fill="#F59E0B" opacity="0.85"/>
+              <path d="M 50 82 C 30 76 22 55 28 38 C 32 48 38 60 50 68 Z" fill="#15803D"/>
+              <path d="M 50 82 C 70 76 78 55 72 38 C 68 48 62 60 50 68 Z" fill="#22C55E"/>
+              <circle cx="50" cy="88" r="3.5" fill="#38bdf8" />
+            </svg>
+            <div class="brand-text-group">
+              <div class="brand-title" style="color: #ffffff;">CLD <span style="color: #4ade80;">KENYA</span></div>
+              <div class="brand-name" style="color: #cbd5e1; font-size: 0.7rem;">CENTER FOR LIVELIHOOD &amp; DEVELOPMENT</div>
+            </div>
+          </div>
+          <p>Center for Livelihood &amp; Development (CLD Kenya) is an indigenous non-governmental organization dedicated to conflict resolution, mediation, and sustainable peace-led community development across Kenya.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About CLD Kenya</a>
+            <a href="programs.html">Peace &amp; Pillars</a>
+            <a href="impact.html">Impact &amp; Stories</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Peace Pillars</h4>
+          <div class="footer-links">
+            <a href="programs.html#adr-peace">ADR &amp; Peace Accords</a>
+            <a href="programs.html#shared-water">Shared Water Kiosks</a>
+            <a href="programs.html#urban-mediation">Urban Youth Mediation</a>
+            <a href="programs.html#women-mediators">Women Peace Chamas</a>
+            <a href="programs.html#grazing-pacts">Rangeland Grazing Pacts</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Head Office</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>Upper Hill, Nairobi, Kenya</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>+254 (0) 720 123 456</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Center for Livelihood &amp; Development (CLD Kenya).</div>
+        <div>Upper Hill, Nairobi, Kenya</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

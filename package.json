@@ -1,0 +1,20 @@
+{
+  "name": "cld-kenya",
+  "version": "1.0.0",
+  "description": "Center for Livelihood & Development (CLD Kenya) - Conflict Resolution, Mediation & Peacebuilding NGO Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "wrangler pages deploy ."
+  },
+  "keywords": [
+    "kenya",
+    "nairobi",
+    "peacebuilding",
+    "mediation",
+    "conflict-resolution",
+    "ngo"
+  ],
+  "author": "CLD Kenya",
+  "license": "MIT"
+}
