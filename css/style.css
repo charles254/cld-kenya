@@ -1466,3 +1466,46 @@ textarea.form-control {
     text-align: center;
   }
 }
+
+/* Executive Leadership Spotlight */
+.executive-spotlight-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 3.5rem;
+  border-top: 5px solid var(--primary-light);
+}
+
+.executive-spotlight-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+}
+
+.executive-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 992px) {
+  .executive-spotlight-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .executive-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
