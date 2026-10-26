@@ -1,7 +1,7 @@
-# CENTER FOR LIVELIHOOD & DEVELOPMENT (CLD KENYA)
+# CENTER FOR DIALOGUE AND RESEARCH INTERNATIONAL LIMITED
 ### Official Website & Digital Platform (Nairobi, Kenya)
 
-**Center for Livelihood & Development (CLD Kenya)** is a registered non-governmental organization headquartered in Upper Hill, Nairobi, Kenya. This repository contains the complete, production-ready, mobile-responsive website.
+**Center for Dialogue and Research International Limited** is an indigenous organization headquartered in Upper Hill, Nairobi, Kenya. This repository contains the complete, production-ready, mobile-responsive website.
 
 ---
 
@@ -83,5 +83,5 @@ Then visit `http://localhost:8080` in your browser.
 ## 📍 Secretariat Contact Details
 - **Location:** 4th Floor, Prosperity Plaza, Hospital Road, Upper Hill, Nairobi, Kenya
 - **Postal Address:** P.O. Box 48291 - 00100 GPO, Nairobi, Kenya
-- **Phone:** +254 (0) 720 123 456 / +254 (0) 20 271 8900
-- **Email:** info@cldkenya.org
+- **Phone:** +254 (0) 721 793 106
+- **Email:** info@cldglobal.co.ke
